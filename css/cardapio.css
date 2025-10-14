@@ -1,0 +1,4 @@
+/* regras específicas do cardápio */
+.lista-pratos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.prato{background:#fff;border:1px solid #eee;padding:10px;border-radius:8px}
+.prato h4{margin:0 0 6px 0}

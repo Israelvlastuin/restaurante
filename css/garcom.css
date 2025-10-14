@@ -1,0 +1,26 @@
+/* garçom: mesas e comandas */
+.grid-mesas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px
+}
+
+.mesa {
+    background: #f3f3f3;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center
+}
+
+.comanda-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background: #fff;
+    margin-bottom: 6px
+}

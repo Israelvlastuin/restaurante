@@ -1,0 +1,115 @@
+:root {
+    --azul: #2b7cff;
+    --verde: #7bd389;
+    --cinza: #f6f6f6;
+    --texto: #222;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: var(--texto);
+    background: var(--cinza)
+}
+
+header {
+    background: var(--azul);
+    color: #fff;
+    padding: 12px 16px
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px
+}
+
+.container {
+    padding: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+    border-radius: 8px
+}
+
+.grid-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    background: var(--azul);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    color: #666
+}
+
+.mini {
+    font-size: 12px;
+    color: #666
+}
+
+.select,
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%
+}
+
+.grid {
+    display: grid;
+    gap: 10px
+}
+
+.flex {
+    display: flex;
+    gap: 8px
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 700
+}
+
+.st-PENDENTE {
+    background: #fff8e6;
+    border: 1px solid #ffd27a
+}
+
+.st-EM_PREPARO {
+    background: #e6f3ff;
+    border: 1px solid #88c0ff
+}
+
+.st-PRONTO {
+    background: #eaffea;
+    border: 1px solid #7bd389
+}
+
+.st-ENTREGUE {
+    background: #eee;
+    border: 1px solid #ccc
+}

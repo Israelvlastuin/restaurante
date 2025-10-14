@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><title>Caixa</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/caixa.css">
+</head>
+<body onload="iniciarCaixa()">
+  <header><h1>Caixa — Fechamento</h1></header>
+  <main class="container">
+    <div class="card">
+      <label>Pesquisar Pedido (ID)</label>
+      <input id="input-pesquisa-pedido" placeholder="Cole o ID do pedido">
+      <div style="display:flex;gap:8px;margin-top:8px;align-items:center">
+        <label>Gorjeta
+          <select id="select-gorjeta"><option value="0">0%</option><option value="10">10%</option></select>
+        </label>
+        <select id="select-metodo">
+          <option value="PIX">PIX</option>
+          <option value="DINHEIRO">Dinheiro</option>
+          <option value="CARTAO_CREDITO">Cartão Crédito</option>
+          <option value="CARTAO_DEBITO">Cartão Débito</option>
+          <option value="TICKET">Ticket</option>
+        </select>
+        <button class="btn" onclick="fecharConta()">Fechar Conta</button>
+      </div>
+      <div id="resumo-caixa" class="resumo" style="margin-top:8px"></div>
+    </div>
+    <div class="card">
+      <h3>Relatório Diário</h3>
+      <div id="relatorio-diario"></div>
+    </div>
+    <div class="card"><a class="btn" href="index.html">Voltar</a></div>
+  </main>
+  <script src="js/global.js"></script>
+  <script src="js/caixa.js"></script>
+</body>
+</html>

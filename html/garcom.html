@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><title>Garçom</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/garcom.css">
+</head>
+<body onload="iniciarGarcom()">
+  <header><h1>Garçom — Mesas e Comandas</h1></header>
+  <main class="container">
+    <div class="card">
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:220px">
+          <h3>Mesas</h3>
+          <div id="lista-mesas" class="grid-mesas"></div>
+        </div>
+        <div style="flex:1;min-width:320px">
+          <h3 id="titulo-mesa-comandas">Selecione uma mesa</h3>
+          <div class="card">
+            <div id="area-comandas"></div>
+            <div style="margin-top:8px" class="flex">
+              <button class="btn" onclick="novaComanda()">Nova Comanda</button>
+              <button class="btn" onclick="enviarPedido()">Enviar pedido</button>
+            </div>
+            <hr>
+            <h4>Itens da comanda</h4>
+            <div id="itens-comanda"></div>
+            <label>Adicionar item</label>
+            <div style="display:flex;gap:8px">
+              <select id="select-prato"></select>
+              <input id="input-quantidade" type="number" min="1" value="1" style="width:80px">
+              <button class="btn" onclick="adicionarItemComanda()">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card"><a class="btn" href="index.html">Voltar</a></div>
+  </main>
+  <script src="js/global.js"></script>
+  <script src="js/garcom.js"></script>
+</body>
+</html>

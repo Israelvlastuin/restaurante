@@ -1,0 +1,31 @@
+/* cozinha: fila */
+.fila-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background: #fff;
+    margin-bottom: 8px
+}
+
+.botao-pequeno {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer
+}
+
+.botao-pequeno.verde {
+    background: var(--verde);
+    color: #fff
+}
+
+.botao-pequeno.amarelo {
+    background: #ffd27a
+}
+
+.botao-pequeno.cinza {
+    background: #ddd
+}
